@@ -11,8 +11,8 @@
         "migrate": "npx prisma migrate dev --name init",
         "studio": "npx prisma studio",
         "postinstall": "prisma generate",
-        "env": "node src/utils/generateEnv.js",
-        "lint": "eslint .",
+        "env": "node src/scripts/generateEnv.js",
+        "lint": "eslint . --ignore-pattern coverage/",
         "format": "prettier --write .",
         "test": "jest"
     },
